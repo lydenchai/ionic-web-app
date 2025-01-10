@@ -13,7 +13,7 @@ export class CategoryDetailPage implements OnInit {
     slug: 'react',
     title: 'React',
     description: 'A JavaScript library for building user interfaces',
-    color: '#3dc5ff',
+    color: '#1d2833',
   };
   constructor() {}
 
