@@ -3,15 +3,15 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="learn" color="light"></ion-back-button>
     </ion-buttons>
-    <ion-title>Learn {{ category.title | titlecase }}</ion-title>
+    <ion-title>Learn {{ category?.title | titlecase }}</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content style="--category-color: {{ category.color}}">
+<ion-content style="--category-color: {{ category?.color}}">
   <div class="category-details-wrapper">
     <div class="category-brief">
       <ion-header collapse="condense">
         <ion-toolbar class="category-brief-toolbar">
-          <ion-title>Learn all about {{ category.title }}</ion-title>
+          <ion-title>Learn all about {{ category?.title }}</ion-title>
         </ion-toolbar>
       </ion-header>
       <p class="category-description">
@@ -71,7 +71,7 @@
     </ion-row>
   </div>
   <div slot="fixed" class="category-fixed-content">
-    <ion-button class="ask-question-btn" expand="block" color="tertiary">
+    <ion-button class="ask-question-btn" expand="block">
       Have a Question? Ask!
     </ion-button>
   </div>

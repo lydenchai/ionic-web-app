@@ -13,8 +13,7 @@
     <span>concepts</span>
   </p>
   <div class="container">
-    <ion-card class="category-card" style="--background: {{category.color}}" [routerLink]="['/learn', category.slug]"
-      *ngFor="let category of categories">
+    <ion-card class="category-card" style="--background: {{category.color}}" [routerLink]="['/learn', category.slug]" *ngFor="let category of categories">
       <ion-card-header>
         <ion-card-title>
           {{category.title}}
