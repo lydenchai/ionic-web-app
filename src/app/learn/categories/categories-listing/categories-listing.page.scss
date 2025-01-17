@@ -1,7 +1,5 @@
 .categories-listing-main-header {
-  // Override Ionic properties
   @at-root ion-header#{&}.header-collapse-condense-inactive {
-    // To fix blink when page loads
     ion-title {
       visibility: hidden;
     }
@@ -9,7 +7,6 @@
 }
 
 .categories-listing-main-toolbar {
-  // Override Ionic properties
   @at-root ion-toolbar#{&} {
     --background: transparent;
     --color: var(--ion-color-bri);
@@ -22,12 +19,11 @@ ion-content {
   top: 0;
   border-top: 44px;
   border-top-style: solid;
-  // Same as default ion-content background
   border-top-color: #000000;
 }
 
 .categories-call-out {
-  margin: 15px 20px 30px;
+  margin: 20px;
   color: rgba(51, 51, 51, 0.8);
   text-align: center;
   line-height: 1.4;
